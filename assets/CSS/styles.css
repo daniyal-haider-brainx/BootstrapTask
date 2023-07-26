@@ -9,7 +9,7 @@
 }
 
 /* ------------------------------------------------------------Separator------------------------------------------------------ */
-.sectionSeparator{
+.sectionSeparator {
   border: 3px solid var(--color-hr);
 
 }
@@ -114,6 +114,7 @@
   font-weight: bold !important;
   font-size: 30px !important;
 }
+
 /* ------------------------------------------------------------Cards------------------------------------------------------ */
 .card {
   border: 2px solid var(--color-hr) !important;
@@ -246,7 +247,7 @@
 
 .reviewArea {
   flex: 1;
-    z-index: 1;
+  z-index: 1;
 }
 
 .reviewArea:nth-of-type(even) {
@@ -281,9 +282,10 @@
   color: var(--color-white);
   color: white;
 }
+
 .reviewSection {
   margin: 0 auto;
-  }
+}
 
 .more_reviews {
   width: 78%;
