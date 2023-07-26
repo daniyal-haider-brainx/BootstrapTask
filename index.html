@@ -25,12 +25,12 @@
     $(document).ready(function () {
       // Set default image
       var defaultImageSrc = $('.default-image').attr('src');
-      $('#imageContainer').html('<img src="' + defaultImageSrc + '" class="img-responsive">');
+      $('#proteinPower').html('<img src="' + defaultImageSrc + '" class="img-responsive">');
 
       // Handle image click event
       $('.carousel-inner .item img').click(function () {
         var imageSrc = $(this).attr('src');
-        $('#imageContainer img').attr('src', imageSrc);
+        $('#proteinPower img').attr('src', imageSrc);
       });
     });
 
@@ -44,25 +44,20 @@
     <!--------------------------------------------------------------- Row --------------------------------------------------------------->
     <div class="row">
       <!--------------------------------------------------------------- Row Coloumn 1 --------------------------------------------------------------->
-
-      <div class="col-md-1 ">
+      <div class="col-md-1 lg-1 ">
         <div class="container">
           <div class="row">
             <div class="col-md-1">
               <!-- ------------------------------------------------- Verical Carousel ---------------------------------------------------------------------------------------------------->
-
               <div id="carousel-pager" class="carousel slide " data-ride="carousel" data-interval="500000000">
-
                 <!---------------------------------------------------Carousel items - -------------------------------------------------->
-                <div class="carousel-inner vertical">
-
+                <div class="carousel-inner powderGallery">
                   <!-- -------------------------------------Item 1--------------------------------------->
                   <div class="active item">
                     <img src="assets/images/1678-AMC-Fruit-Punch-Rev2-PDP-new_40x40@2x.jpg" class="img-responsive"
                       data-target="#carousel-main" data-slide-to="0">
                     <img src="assets/images/collagen-unf-sq_40x40@2x.png" class="img-responsive"
                       data-target="#carousel-main" data-slide-to="0">
-
                     <img src="assets/images/collagen-flavors-vanilla_40x40@2x.png" class="img-responsive"
                       data-target="#carousel-main" data-slide-to="0">
                     <img src="assets/images/collagen-unflavored-5.17.21_40x40@2x.png" class="img-responsive"
@@ -73,19 +68,24 @@
                       data-target="#carousel-main" data-slide-to="0">
                     <img src="assets/images/collagen-unflavored-5.17.21_40x40@2x.png" class="img-responsive"
                       data-target="#carousel-main" data-slide-to="0">
-
                   </div>
                   <!-- -------------------------------------Item 2--------------------------------------->
 
                   <div class="item">
-                    <img src="assets/images/collagen-unflavored-5.17.21_40x40@2x.png" class=" default-image img-responsive" data-target="#carousel-main" data-slide-to="1">
-                    <img src="assets/images/collagen-flavors-vanilla_40x40@2x.png" class="img-responsive" data-target="#carousel-main" data-slide-to="1">
-                    <img src="assets/images/collagen-flavors-vanilla_40x40@2x.png" class="img-responsive" data-target="#carousel-main" data-slide-to="1">
+                    <img src="assets/images/collagen-unflavored-5.17.21_40x40@2x.png"
+                      class=" default-image img-responsive" data-target="#carousel-main" data-slide-to="1">
+                    <img src="assets/images/collagen-flavors-vanilla_40x40@2x.png" class="img-responsive"
+                      data-target="#carousel-main" data-slide-to="1">
+                    <img src="assets/images/collagen-flavors-vanilla_40x40@2x.png" class="img-responsive"
+                      data-target="#carousel-main" data-slide-to="1">
                     <img src="assets/images/thumb-1.jpg" class="img-responsive" data-target="#carousel-main"
                       data-slide-to="0">
-                    <img src="assets/images/Complete_-5-Collagen-Protein.png" class="img-responsive" data-target="#carousel-main" data-slide-to="1">
-                    <img src="assets/images/thumb-1.jpg" class="img-responsive" data-target="#carousel-main" data-slide-to="1">
-                    <img src="assets/images/thumb-2.jpg" class="img-responsive" data-target="#carousel-main" data-slide-to="1">
+                    <img src="assets/images/Complete_-5-Collagen-Protein.png" class="img-responsive"
+                      data-target="#carousel-main" data-slide-to="1">
+                    <img src="assets/images/thumb-1.jpg" class="img-responsive" data-target="#carousel-main"
+                      data-slide-to="1">
+                    <img src="assets/images/thumb-2.jpg" class="img-responsive" data-target="#carousel-main"
+                      data-slide-to="1">
                   </div>
 
                 </div>
@@ -110,20 +110,26 @@
         </div>
       </div>
       <!-- -------------------------------------------------Row Section 2  --------------------------------------------------->
-      <div class="col-md-5 d-flex flex-column">
+      <div class="col-sm-5 col-lg-5 col-xl-5 d-flex flex-column">
+
         <div class="subheading">
           <h4 class="sub_heading">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h4>
         </div>
 
-        <div class="flex_star">
+        <div class="reviewSection">
 
-          <div class="flex_starchild1"><img src="https://cdn.shopify.com/s/files/1/2451/8571/t/41/assets/featured_review_stars_small.png?v=115086123786708348821631221618">
+          <div class="reviewStars"><img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/t/41/assets/featured_review_stars_small.png?v=115086123786708348821631221618">
           </div>
-          <div class="flexstartchild2"><a href="javascript:void(0)" class="text-m" aria-label="2909 reviews" tabindex="-1">2909 Reviews</a></div>
+          <div class="reviewCount"><a href="javascript:void(0)" class="text-m" aria-label="2909 reviews"
+              tabindex="-1">2909 Reviews</a></div>
         </div>
-                <!-- ------------------------------------------------- Container to display OnClick Carousel Images  --------------------------------------------------->
-        <div id="imageContainer"></div>
-        <div class="flex_star"> <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"class="free-ebook-img" alt="Receive two free e-books with your order. 'The 3 Week Diet' and '53 Fat Burning Smoothies &amp; Milkshakes' are yours free, a $50 value.">
+        <!-- ------------------------------------------------- Container to display OnClick Carousel Images  --------------------------------------------------->
+        <div id="proteinPower"></div>
+        <div class="reviewSection"> <img
+            src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"
+            class="free-ebook-img"
+            alt="Receive two free e-books with your order. 'The 3 Week Diet' and '53 Fat Burning Smoothies &amp; Milkshakes' are yours free, a $50 value.">
         </div>
       </div>
       <!---------------------------------------------------------------- Row Section 3 ---------------------------------------------------------------->
@@ -153,7 +159,7 @@
                     <div class="mobileViewCardText">
                       <div> <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-1-1571245639778.png"
                           alt="product image 1 item" class="Card_image"></div>
-                      <h5 class="card-title text-center">1 Pack</h5>
+                      <h5 class="card-title cardheading text-center ">1 Pack</h5>
                       <div class="card-text text-center text_bold">$39</div>
 
                       <button type="button" class="button_card btn-success btn-block text-center">Choose
@@ -166,13 +172,14 @@
                 <div class="specialCard card">
                   <div class="card_head">
                     <div class="title-container container-fluid">
-                      <p class="title  fw-bold">Most Popular</p>
+                      <p class="title">Most Popular</p>
                     </div>
                   </div>
                   <div class="card-body text-center">
                     <div class="mobileViewCardText">
-                      <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-3-1571245639780.png"alt="product image 3 item" class="Card_image">
-                      <h5 class="card-title">3 Packs</h5>
+                      <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-3-1571245639780.png"
+                        alt="product image 3 item" class="Card_image">
+                      <h5 class="card-title cardheading">3 Packs</h5>
                       <div class="special_card_text">
                         <div class="card-text">$35</div>
                         <div class="card-text">per Pack</div>
@@ -193,7 +200,7 @@
                     <div class="mobileViewCardText">
                       <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-6-1571245639782.png"
                         alt="product image 6 item" class="Card_image">
-                      <h5 class="card-title text-center">6 Packs</h5>
+                      <h5 class="card-title text-center cardheading">6 Packs</h5>
                       <div class="special_card_text">
                         <div class="card-text text-center">
                           $31</div>
@@ -202,7 +209,7 @@
                         <p class="card-text Save_alert"> (Save 10%)</p>
                       </div>
                     </div>
-                    <div class="mobilebutton">
+                    <div class="flavorButton">
                       <button type="button" class="btn mt-5 btn-success btn-block">Choose Flavours</button>
                     </div>
                   </div>
@@ -225,7 +232,7 @@
                     <div class="mobileViewCardText">
                       <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-1-1571245639778.png"
                         alt="product image 1 item" class="Card_image">
-                      <h5 class="card-title text-center">1 Pack</h5>
+                      <h5 class="card-title text-center cardheading">1 Pack</h5>
                       <h6 class="card-subtitle mb-2  text-center">Every 4 Weeks</h6>
                       <p class="card-text text-center"><s>39</s></p>
                       <div class="special_card_text">
@@ -244,12 +251,12 @@
                 </div>
                 <!---------------------------------------------------------------------------- Card 5 ---------------------------------------------------------------------------->
 
-                <div class="card normal_card_attributes">
+                <div class="card">
                   <div class="card-body">
                     <div class="mobileViewCardText">
                       <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-3-1571245639780.png"
                         alt="product image 3 item" class="Card_image">
-                      <h5 class="card-title text-center">1 Pack</h5>
+                      <h5 class="card-title text-center cardheading" >1 Pack</h5>
                       <h6 class="card-subtitle mb-2  text-center">Every 4 Weeks</h6>
                       <p class="card-text text-center"><s>39</s></p>
                       <div class="special_card_text">
@@ -267,12 +274,12 @@
                 </div>
                 <!---------------------------------------------------------------------------- Card 6 ---------------------------------------------------------------------------->
 
-                <div class="card normal_card_attributes">
+                <div class="card">
                   <div class="card-body">
                     <div class="mobileViewCardText">
                       <img src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-6-1571245639782.png"
                         alt="product image 6 item" class="Card_image">
-                      <h5 class="card-title text-center">3 Packs</h5>
+                      <h5 class="card-title text-center cardheading">3 Packs</h5>
                       <h6 class="card-subtitle mb-2  text-center">Every 4 Weeks</h6>
                       <p class="card-text text-center"><s>39</s></p>
                       <div class="special_card_text">
@@ -293,7 +300,7 @@
           </div>
 
           <!--------------------------------------------------- Horizontal Carousel ------------------------------------------------------------------->
-          <div class="carousel_Container">
+          <div class="promotionGallery">
             <div class="row">
               <div class="col-md-5">
                 <!---------------------------------------------------------------- Carousel  Items ---------------------------------------------------------------->
@@ -423,7 +430,7 @@
           </div>
 
           <!--------------------------------------------------- Customer Review Column------------------------------------------------------------------->
-          <div class="flexcontainer flexReviewSection">
+          <div class="customerReview">
             <div class="columns">
               <p class="review">FEATURED CUSTOMER REVIEW</p>
               <p class="more_reviews">Read more reviews</p>
@@ -448,16 +455,20 @@
       </div>
       <!--------------------------------------------------- Video Section------------------------------------------------------------------->
       <div class="container-fluid bg-color">
-        <h1 class="product_text text-white text-center mt-5 mb-5">
+        <h1 class="product_text text-white text-center my-5">
           Product Videos</h1>
-        <iframe class="video w-100 mb-5" title="Product Overview: BioTRUST Ageless Multi-Collagen Protein Powder" src="https://player.vimeo.com/video/299705286?playsinline=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-vimeo-tracked="true" data-ready="true">
+        <iframe class="video w-100 mb-5" title="Product Overview: BioTRUST Ageless Multi-Collagen Protein Powder"
+          src="https://player.vimeo.com/video/299705286?playsinline=0" frameborder="0" webkitallowfullscreen=""
+          mozallowfullscreen="" allowfullscreen="" data-vimeo-tracked="true" data-ready="true">
         </iframe>
         <div class="d-flex justify-content-around mb-5">
           <div class=" bg-video">
-            <iframe src="https://player.vimeo.com/video/296462656" name="Killersites.com" height="400px" width="700px"frameborder="0" marginheight="20" marginwidth="35" scrolling="auto" class="Hide_Video">
+            <iframe src="https://player.vimeo.com/video/296462656" name="Killersites.com" height="400px" width="700px"
+              frameborder="0" marginheight="20" marginwidth="35" scrolling="auto" class="Hide_Video">
             </iframe>
           </div>
-          <iframe src="https://player.vimeo.com/video/296462747" name="Killersites.com" height="400px" width="700px" frameborder="0" marginheight="20" marginwidth="35" scrolling="auto">
+          <iframe src="https://player.vimeo.com/video/296462747" name="Killersites.com" height="400px" width="700px"
+            frameborder="0" marginheight="20" marginwidth="35" scrolling="auto">
 
         </div>
       </div>

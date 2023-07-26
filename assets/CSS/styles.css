@@ -25,20 +25,20 @@
   margin: 0 auto;
 }
 
-#imageContainer img {
+#proteinPower img {
   width: 350px;
   height: 450px;
   transition: transform 0.3s ease;
 
 }
 
-#imageContainer {
+#proteinPower {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-#imageContainer:hover img {
+#proteinPower:hover img {
   transform: scale(1.5);
 }
 
@@ -110,7 +110,7 @@
 }
 
 
-h5 {
+.cardheading {
   color: var(--color-hr);
   padding: 10px;
   font-size: 40px !important;
@@ -303,7 +303,7 @@ h5 {
 }
 
 /* ----------------------------------------Column Flex Box---------------------------------- */
-.flexcontainer {
+.customerReview {
   margin-top: 0.5%;
   display: flex;
   justify-content: center;
@@ -352,7 +352,20 @@ h5 {
   color: var(--color-white);
   color: white;
 }
-
+.reviewSection {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  }
+.review_star {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin: 0 auto;
+  }
 .more_reviews {
   width: 78%;
   color: var(--btn_bg);
@@ -408,11 +421,11 @@ h5 {
 }
 
 /* ---------------------------------------Vertical Carousel---------------------------------- */
-.carousel_Container img {
+.promotionGallery img {
   width: 200%;
 }
 
-.carousel_Container {
+.promotionGallery {
   width: 200%;
 }
 
@@ -453,7 +466,7 @@ h5 {
   }
 }
 
-.carousel-inner.vertical>.item {
+.carousel-inner.powderGallery>.item {
   -webkit-transition: .10s ease-in-out bottom;
   -moz-transition: .10s ease-in-out bottom;
   -o-transition: .10s ease-in-out bottom;
@@ -461,8 +474,8 @@ h5 {
 }
 
 
-.carousel-inner.vertical>.next,
-.carousel-inner.vertical>.prev {
+.carousel-inner.powderGallery>.next,
+.carousel-inner.powderGallery>.prev {
   height: 100%;
   width: auto;
 }
@@ -735,7 +748,7 @@ a.right.carousel-control.left {
     color: var(--color-white)
   }
 
-  .carousel_Container {
+  .promotionGallery {
     display: none;
   }
 
@@ -813,7 +826,7 @@ a.right.carousel-control.left {
     margin: 0;
   }
 
-  .flexcontainer {
+  .customerReview {
     flex-direction: column;
 
   }
